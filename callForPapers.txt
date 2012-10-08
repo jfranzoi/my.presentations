@@ -1,0 +1,21 @@
+* Titolo Sessione
+
+Extreme Project Evaluation
+
+* Abstract: Descrivi la sessione che vuoi proporre
+
+"How can you plan a project if you only have a week? [..] You don't have enough time to write a complete set of stories [..] You don't have time to write prototypes so you can estimate the stories from experience". La risposta a questa domanda è come Beck conclude il capitolo "Planning Strategy" del "libro bianco", spiegando come XP gestisce il rischio nei progetti per i quali non si ha il tempo di pianificare e valutare le complessità tecniche.
+
+In questa sessione provo a raccogliere la mia esperienza nella valutazione di fattibilità di progetti: tutto quello che passa da quando un cliente arriva da noi con un'idea a quando si ha il via per iniziare il progetto. Che potrebbe anche non partire mai.
+
+Condivido con il pubblico sia una strategia di massima (esplorazione, commitment, report) che le pratiche e gli strumenti che negli ultimi anni ho trovato più utili: mappe mentali, modelli del dominio, piano di rilascio, bozze architetturali e spikes.
+
+
+* Struttura della sessione: Di quali parti si compone l'intervento?
+
+Dopo aver introdotto i possibili obiettivi della valutazione di progetto (un'indicazione di budget o un'offerta economica), la sessione simula operativamente le tre fasi della valutazione: esplorazione (cosa si vuole realizzare? come lo si intende realizzare?), commitment (stima di massima, piano di rilascio, offerta economica) e report (documento di sintesi per eventuale contratto commerciale)
+
+
+* Obiettivi della sessione: Che cosa ti aspetti che i partecipanti alla tua sessione porteranno a casa? Quali sono quindi gli obiettivi della sessione?
+
+Vorrei condividere indicazioni pratiche che il pubblico possa usare nel proprio lavoro quotidiano. In particolare, alcune pratiche e strumenti come mappe mentali e modelli di dominio.
