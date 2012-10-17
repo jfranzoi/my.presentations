@@ -1,0 +1,15 @@
+require 'rake'
+
+tex_file = "ExtremeProjectEvaluation.tex"
+
+task :default => [:clean, :build]
+
+desc "Clean files"
+task :clean do
+	system "rm -rf *.aux *.log *.nav *.out *.pdf *.snm *.toc"
+end
+
+desc "Compile document"
+task :build do
+	system "pdflatex #{tex_file} 1> /dev/null"
+end
