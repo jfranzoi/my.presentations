@@ -1,15 +1,19 @@
 require 'rake'
-
-tex_file = "ExtremeProjectEvaluation.tex"
+require 'fileutils'
 
 task :default => [:clean, :build]
 
 desc "Clean files"
 task :clean do
-	system "rm -rf *.aux *.log *.nav *.out *.pdf *.snm *.toc"
+	delete %w[ *.aux *.log *.nav *.out *.pdf *.snm *.toc ]
 end
 
 desc "Compile document"
 task :build do
-	system "pdflatex #{tex_file} 1> /dev/null"
+	tex_file = "ExtremeProjectEvaluation.tex"
+	system "pdflatex #{tex_file}"
+end
+
+def delete(items)
+	FileUtils.rm_rf items.collect { |each| Dir.glob(each) }
 end
