@@ -11,7 +11,7 @@ end
 desc "Compile document"
 task :build do
 	tex_file = "ExtremeProjectEvaluation.tex"
-	system "pdflatex #{tex_file}"
+	system "pdflatex #{tex_file} 1> /dev/null"
 end
 
 def delete(items)
