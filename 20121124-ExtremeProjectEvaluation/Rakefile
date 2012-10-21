@@ -1,0 +1,27 @@
+require 'rake'
+require 'fileutils'
+
+task :default => [:clean, :build]
+
+desc "Clean files"
+task :clean do
+  recreate_folder "build"
+end
+
+desc "Compile document"
+task :build do
+	pdflatex "session.tex", "build"
+end
+
+def recreate_folder(folder)
+  puts "Recreating folder: #{folder}..."
+  FileUtils.rm_rf folder
+  FileUtils.mkdir folder
+end
+
+def pdflatex(tex_file, into_folder)
+  puts "Processing file: #{tex_file}"
+  system "pdflatex -output-directory #{into_folder} #{tex_file} 1> /dev/null"
+
+  puts "Check fodler: #{into_folder}"
+end
