@@ -1,6 +1,7 @@
 - Different projects:
 	* for customers: contracts? who pays for evalutation?
 	* internal products
+	* AKA: presales? proposals? estimation/scoping?
 - Then, what happens at the kick-off?
 - Real-world example (Ask for permission): clicks, one from XPeppers, fake one?
 - References:

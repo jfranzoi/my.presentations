@@ -23,5 +23,5 @@ def pdflatex(tex_file, into_folder)
   puts "Processing file: #{tex_file}"
   system "pdflatex -output-directory #{into_folder} #{tex_file} 1> /dev/null"
 
-  puts "Check fodler: #{into_folder}"
+  puts "Check folder: #{into_folder}"
 end
