@@ -1,9 +1,12 @@
-\documentclass[compress, red]{beamer}
+\documentclass[compress, red, 14pt]{beamer}
 
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage{times}
 \usepackage[T1]{fontenc}
+
+\usepackage{bookman}
+\usefonttheme{serif}
+\usefonttheme{structurebold}
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{images/background.png}}
 
@@ -24,57 +27,69 @@
 
 \begin{document}
 
-\begin{frame}
-	\titlepage
-\end{frame}
+	\begin{frame}
+		\titlepage
+	\end{frame}
 
-\begin{frame}{Introduzione}	
-	\begin{itemize}
-		\item Obiettivo
-		\item Strategia
-	\end{itemize}
-\end{frame}
+	\begin{frame}{Introduzione}
+		\begin{quote}
+			{\small "<{How can you plan a project if you only have a week? [..] You don't have enough time to write a complete set of stories [..] You don't have time to write prototypes so you can estimate the stories from experience}">}
+		\end{quote}
+		\hfill {\scriptsize K.Beck, Extreme Programming Explained, 1st Edition}
 
-\begin{frame}{1. Esplorazione}
-	\begin{itemize}
-		\item Brainstorming: Mappa Mentale
-		\item Cosa: Piano di Rilascio, Modello del Dominio
-		\item Come: Architettura Logica, Hosting, Spikes
-	\end{itemize}
-\end{frame}
+		\begin{itemize}
+			\item Diversi Obiettivi
+			\begin{itemize}
+				\item Indicazioni di budget / effort
+				\item Offerta commerciale
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
 
-\begin{frame}{2. Commitment}
-	\begin{itemize}
-		\item Stima: Complessità, Incertezza, Effort
-		\item Piano di Rilascio: Team, Elapsed
-		\item Economics: Sviluppo, Hosting, Servizi
-	\end{itemize}
-\end{frame}
 
-\begin{frame}{3. Reporting (Steering)}
-	\begin{itemize}
-		\item Introduzione
-		\item Piano
-		\item Soluzione tecnica
-		\item Economics
-	\end{itemize}
-\end{frame}
+	\begin{frame}{Una Possibile Strategia}
+		\begin{itemize}
+			\item Planning in eXtreme Programming (XP)
+			\begin{itemize}
+				\item Strategia: Esplorazione, Commitment, Steering
+				\item Valori: Feedback, Semplicità, Comunicazione
+			\end{itemize}
 
-\begin{frame}{Alcune Domande}
-	\begin{itemize}
-		\item Per clienti ok, ma per prodotti?
-		\item E dopo? Il contratto? E al kick-off?
-		\item Chi paga per questa valutazione?
-	\end{itemize}
-\end{frame}
+			\item Valutazione Progetti: Steering?
+			\begin{itemize}
+				\item Granularità grossa
+				\item Reporting, Feedback, Kick-Off
+			\end{itemize}
 
-\begin{frame}{Per approfondire}
-	\begin{itemize}
-		\item Extreme Programming Explained, First Edition
-		\item Agile Estimating and Planning
-		\item Mindmapping
-		\item LaTeX
-	\end{itemize}
-\end{frame}
+		\end{itemize}
+	\end{frame}
+
+
+	\begin{frame}{Esplorazione: Brainstorming}
+	\end{frame}
+
+	\begin{frame}{Esplorazione: Cosa?}
+	\end{frame}
+
+	\begin{frame}{Esplorazione: Come?}
+	\end{frame}
+
+	\begin{frame}{Commitment: Stima}
+	\end{frame}
+
+	\begin{frame}{Commitment: Piano di Rilascio}
+	\end{frame}
+	
+	\begin{frame}{Commitment: Economics}
+	\end{frame}
+	
+	\begin{frame}{Reporting}
+	\end{frame}
+	
+	\begin{frame}{Sì, ma...}
+	\end{frame}
+	
+	\begin{frame}{Per Approfondire}
+	\end{frame}
 
 \end{document}
