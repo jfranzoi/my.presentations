@@ -5,6 +5,7 @@
 \usepackage{kmath,kerkis}
 \usepackage[T1]{fontenc}
 \usepackage{color}
+\usepackage{hyperref}
 
 \usefonttheme{serif}
 \usefonttheme{structurebold}
@@ -23,7 +24,8 @@
 
 \author{
 	Jacopo Franzoi \\
-	{\scriptsize jacopo.franzoi@gmail.com }
+	{\scriptsize jacopo.franzoi@gmail.com } \\
+	{\scriptsize \href{http://jacopo.franzoi.googlepages.com/}{http://jacopo.franzoi.googlepages.com} \\ }
 }
 
 \date{
@@ -166,31 +168,41 @@
 	
 	\begin{frame}{Sì, ma...}
 		\begin{itemize}
-			\item Ok per progetti di clienti, ma per prodotti?
-			\item Chi paga per questa valutazione?
-			\item E dopo? Il contratto? E il kick-off?
+			\item Ok per progetti di clienti, ma per \highlight{prodotti}?
+			\item Chi \highlight{paga} per questa valutazione?
+			\item E dopo? Il \highlight{contratto}? E il kick-off?
 		\end{itemize}
 		\begin{center}
-			\includegraphics[scale=0.28]{images/takeaway.png}
+			\hspace*{-0.6cm}
+			\includegraphics[scale=0.31]{images/takeaway.png}
 		\end{center}
 	\end{frame}
 	
 	\begin{frame}{Per Approfondire}
 		\begin{itemize}
-			\item {\small K.Beck, Extreme Programming Explained, 1st ed.}
+			\item {\small \highlight{Extreme Programming Explained - 1st ed}, K.Beck}
 			\begin{itemize}
 				\item Strategia di Pianificazione
 				\item Valori
 			\end{itemize}
-			\item {\small M.Cohn, Agile Estimating and Planning}
+			
+			\item {\small \highlight{Agile Estimating and Planning}, M.Cohn}
 			\begin{itemize}
 				\item Incertezza nelle stime
 			\end{itemize}
+			
+			\item {\footnotesize \highlight{\href{http://www.natpryce.com/articles/000755.html}{Test-Driven Development of Asynchronous Systems}}}{\small , N.Pryce}
+				\begin{itemize}
+					\item Architettura Logica
+				\end{itemize}
+		\end{itemize}
+		
+		\begin{itemize}
 			\item Mind Mapping
 			\item Reporting
 			\begin{itemize}
-				\item LaTeX
-				\item Version Control Systems
+				\item Text Processor: \highlight{LaTeX}
+				\item VCS: \highlight{Subversion}, \highlight{Git}
 			\end{itemize}
 		\end{itemize}
 	\end{frame}
