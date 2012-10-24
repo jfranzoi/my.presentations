@@ -87,11 +87,11 @@
 		    \begin{column}{.5\textwidth}
 				\begin{itemize}
 					\item Guida il cliente
+					\item Materiale esitente
 					\begin{itemize}
-						\item Discussione
 						\item Presentazioni
 						\item Documentazione
-						\item Siti web esistenti
+						\item Siti web
 					\end{itemize}
 				\end{itemize}	
 
@@ -107,30 +107,64 @@
 	\end{frame}
 
 	\begin{frame}{Esplorazione: Cosa?}
-		\begin{itemize}
-			\item Storie / Temi
-			\item Scadenze, Eventi importanti
-		\end{itemize}
 
-		\begin{itemize}
-			\item \textbf{Piano di Rilascio}
-			\item \textbf{Modello del Dominio}
-		\end{itemize}
+		\begin{columns}[T]
+		    \begin{column}{.5\textwidth}
+
+				\begin{itemize}
+					\item Storie, temi
+					\item Scadenze, eventi
+				\end{itemize}
+
+				\begin{itemize}
+					\item \textbf{Piano di Rilascio}
+					\begin{itemize}
+						\item Note, domande
+						\item Nessuna stima
+					\end{itemize}
+					\item \textbf{Modello \\ del Dominio}
+					\begin{itemize}
+						\item Entità, relazioni
+						\item Cardinalità
+					\end{itemize}
+				\end{itemize}
+				
+	    \end{column}
+	    \begin{column}{.5\textwidth}
+			\hspace*{-0.6cm}
+		    \includegraphics[scale=0.18]{images/domain.png}
+	    \end{column}
+	 \end{columns}
 	\end{frame}
 
 	\begin{frame}{Esplorazione: Come?}
+		
+		\begin{columns}[T]
+		    \begin{column}{.5\textwidth}
+
 		\begin{itemize}
 			\item \textbf{Architettura Logica}
 			\begin{itemize}
-				\item Alto Livello
-				\item Fattibilità
+				\item Sistemi
+				\item Interconnessioni
+				\item Clients (e utenti)
 			\end{itemize}
+		\end{itemize}		
+		
+		\begin{itemize}
 			\item Hosting
 			\begin{itemize}
-				\item In-house, Cloud
+				\item In-house, cloud
 			\end{itemize}
 			\item Spikes
 		\end{itemize}
+		
+	    \end{column}
+	    \begin{column}{.5\textwidth}
+			\hspace*{-0.6cm}
+		    \includegraphics[scale=0.17]{images/architecture.png}
+	    \end{column}
+	 \end{columns}
 
 	\end{frame}
 
