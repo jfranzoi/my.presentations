@@ -155,6 +155,7 @@
 			\item Hosting
 			\begin{itemize}
 				\item In-house, cloud
+				\item Pro, staging
 			\end{itemize}
 			\item Spikes
 		\end{itemize}
@@ -169,14 +170,37 @@
 	\end{frame}
 
 	\begin{frame}{Commitment: Stima}
-		\begin{itemize}
-			\item Complessità
-			\item Incertezza
-		\end{itemize}
+		
+		\begin{columns}[T]
+		    \begin{column}{.5\textwidth}
+		
+				\begin{itemize}
+					\item Complessità
+					\begin{itemize}
+						\item Mimina, 50\%
+						\item Massima, 90\%
+						\item Giorni/coppia, settimane/coppia
+					\end{itemize}
+					\item Incertezza
+					\begin{itemize}
+						\item Buffer da stddev
+					\end{itemize}
+				\end{itemize}
 
-		\begin{itemize}
-			\item \textbf{Effort}
-		\end{itemize}
+				\begin{itemize}
+					\item \textbf{Effort}
+					\begin{itemize}
+						\item 50\% + buffer
+					\end{itemize}
+				\end{itemize}
+		
+		    \end{column}
+		    \begin{column}{.5\textwidth}
+				\hspace*{-0.6cm}
+			    \includegraphics[scale=0.25]{images/estimates.png}
+		    \end{column}
+		 \end{columns}
+	
 	\end{frame}
 
 	\begin{frame}{Commitment: Piano di Rilascio}
