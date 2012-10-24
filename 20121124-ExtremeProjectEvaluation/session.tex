@@ -6,6 +6,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{color}
 \usepackage{hyperref}
+\usepackage[absolute,overlay]{textpos}
+
 
 \usefonttheme{serif}
 \usefonttheme{structurebold}
@@ -67,9 +69,10 @@
 		\begin{itemize}
 			\item E per la \highlight{valutazione} di progetti?
 			\begin{itemize}
-				\item Granularità grossa
+				\item Granularità grossa (scope, stime)
 				\item Esperienza pregressa
-				\item Reporting e Planing Game al kick-off
+				\item Report conciso ($1/2$ - 2 giorni)
+				\item Planing Game al kick-off
 			\end{itemize}
 		\end{itemize}
 		
@@ -79,20 +82,28 @@
 	\end{frame}
 
 
-	\begin{frame}{Esplorazione: Brainstorming}
-		\begin{itemize}
-			\item Guida il cliente
-			\begin{itemize}
-				\item Discussione
-				\item Presentazioni, documentazione
-				\item Siti web esistenti
-			\end{itemize}
-		\end{itemize}	
+	\begin{frame}{Esplorazione: Brainstorming}		
+		\begin{columns}[T]
+		    \begin{column}{.5\textwidth}
+				\begin{itemize}
+					\item Guida il cliente
+					\begin{itemize}
+						\item Discussione
+						\item Presentazioni
+						\item Documentazione
+						\item Siti web esistenti
+					\end{itemize}
+				\end{itemize}	
 
-		\begin{itemize}
-			\item \textbf{Mappa Mentale}
-		\end{itemize}
-
+				\begin{itemize}
+					\item \textbf{Mappa Mentale}
+				\end{itemize}
+		    \end{column}
+		    \begin{column}{.5\textwidth}
+				\hspace*{-0.4cm}
+			    \includegraphics[scale=0.18]{images/mindmap.png}
+		    \end{column}
+		 \end{columns}
 	\end{frame}
 
 	\begin{frame}{Esplorazione: Cosa?}
