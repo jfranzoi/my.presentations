@@ -1,4 +1,4 @@
-\documentclass[compress, red, 14pt]{beamer}
+\documentclass[compress, red, 14pt, pdf]{beamer}
 
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
@@ -6,17 +6,17 @@
 \usepackage[T1]{fontenc}
 \usepackage{color}
 \usepackage{hyperref}
-\usepackage[absolute,overlay]{textpos}
+\usepackage[absolute, overlay]{textpos}
 
-
+% fonts
 \usefonttheme{serif}
 \usefonttheme{structurebold}
 
+% style
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{images/background.png}}
 \setbeamertemplate{navigation symbols}{}
 \definecolor{purple}{RGB}{147,10,0}
 \setbeamercolor{structure}{fg=purple}
-
 \setbeamertemplate{items}[circle]
 \setbeamercolor*{item}{fg=black}
 
@@ -38,7 +38,7 @@
 \begin{document}
 	\begin{frame}
 		\titlepage
-	\end{frame}
+	\end{frame}	
 
 	\begin{frame}{Valutazione di Progetti}
 		\begin{quote}
@@ -109,7 +109,7 @@
 	\begin{frame}{Esplorazione: Cosa?}
 
 		\begin{columns}[T]
-		    \begin{column}{.5\textwidth}
+		    \begin{column}{0.6\textwidth}
 
 				\begin{itemize}
 					\item Storie, temi
@@ -122,7 +122,7 @@
 						\item Note, domande
 						\item Nessuna stima
 					\end{itemize}
-					\item \textbf{Modello \\ del Dominio}
+					\item \textbf{Modello del Dominio}
 					\begin{itemize}
 						\item Entità, relazioni
 						\item Cardinalità
@@ -130,9 +130,10 @@
 				\end{itemize}
 				
 	    \end{column}
-	    \begin{column}{.5\textwidth}
-			\hspace*{-0.6cm}
-		    \includegraphics[scale=0.18]{images/domain.png}
+	    \begin{column}{0.4\textwidth}
+			\hspace*{-0.8cm} \includegraphics[scale=0.25]{images/stories.png}
+			\\ \vspace*{0.25cm}
+			\hspace*{-0.8cm} \includegraphics[scale=0.15]{images/domain.png}
 	    \end{column}
 	 \end{columns}
 	\end{frame}
