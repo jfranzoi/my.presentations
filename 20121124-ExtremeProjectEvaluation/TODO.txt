@@ -2,13 +2,13 @@ Content:
 - Mind map
 - Spikes
 - Contact me
-- References - Mind mapping
-- References - LaTeX
++ References - Mind mapping
++ References - LaTeX
 	
 Images:
-- Logical architecture: find the original one, better resolution
++ Logical architecture: find the original one, better resolution
 - Effort with buffer
-- Team: kids soccer team!
++ Team: kids soccer team!
 - Elapsed
 - Economics: ?
 - Report: real document
