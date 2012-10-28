@@ -7,9 +7,9 @@ Content:
 	
 Images:
 + Logical architecture: find the original one, better resolution
-- Effort with buffer
++ Effort with buffer
 + Team: kids soccer team!
-- Elapsed
++ Elapsed
 - Economics: ?
 - Report: real document
 - Takeaway mindmap: better one
