@@ -20,8 +20,12 @@ def recreate_folder(folder)
 end
 
 def pdflatex(tex_file, into_folder)
+  pdf_file = tex_file.gsub('.tex', '.pdf')
+  file_to_publish = "#{ File.basename(Dir.getwd) }.pdf"
+  
   puts "Processing file: #{tex_file}"
   system "pdflatex -output-directory #{into_folder} #{tex_file} 1> /dev/null"
 
-  puts "Check folder: #{into_folder}"
+  FileUtils.cp "#{into_folder}/#{pdf_file}", "#{into_folder}/#{file_to_publish}"
+  puts "Please publish file: #{into_folder}/#{file_to_publish}"
 end
