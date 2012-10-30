@@ -3,28 +3,41 @@ require 'fileutils'
 
 task :default => [:clean, :build]
 
+TEX_FILE = 'session.tex'
+PROJECT_NAME = File.basename(Dir.getwd)
+BUILD_FOLDER = 'build'
+
 desc "Clean files"
 task :clean do
-  recreate_folder "build"
+  recreate BUILD_FOLDER
 end
 
 desc "Compile document"
-task :build do
-	pdflatex "session.tex", "build"
+task :build => [:clean] do
+	pdflatex TEX_FILE, BUILD_FOLDER
 end
 
-def recreate_folder(folder)
+desc "Open compiled document"
+task :open => [:build] do
+  open_at BUILD_FOLDER, "#{PROJECT_NAME}.pdf"
+end
+
+
+private
+
+def recreate(folder)
   puts "Recreating folder: #{folder}..."
   FileUtils.rm_rf folder
   FileUtils.mkdir folder
 end
 
-def pdflatex(tex_file, into_folder)
-  pdf_file = tex_file.gsub('.tex', '.pdf')
-  file_to_publish = "#{ File.basename(Dir.getwd) }.pdf"
-  
+def pdflatex(tex_file, into)
   puts "Processing file: #{tex_file}"
-  `pdflatex -output-directory #{into_folder} --job-name=#{file_to_publish} #{tex_file}`
+  `pdflatex -output-directory #{into} -jobname=#{PROJECT_NAME} #{tex_file}`
 
-  puts "Processed file: #{into_folder}/#{file_to_publish}"
+  puts "Processed file: #{into}/#{PROJECT_NAME}.pdf"
+end
+
+def open_at(folder, file)
+  system "open #{folder}/#{file}"
 end

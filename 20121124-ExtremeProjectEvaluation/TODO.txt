@@ -4,6 +4,10 @@ Content:
 - Contact me
 + References - Mind mapping
 + References - LaTeX
+- early feedback:
+	- not enough people, e.g. stakeholders
+	- feasibility, in the view of provider: should I sign for the project?
+	- personal experience: gone well, gone bad -> "why" behind each practice
 	
 Images:
 + Logical architecture: find the original one, better resolution
