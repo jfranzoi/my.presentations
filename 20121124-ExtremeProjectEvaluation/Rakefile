@@ -1,25 +1,38 @@
 require 'rake'
 require 'fileutils'
 
-task :default => [:clean, :build]
+task :default => [:clean, :build, :dist]
 
-TEX_FILE = 'session.tex'
 PROJECT_NAME = File.basename(Dir.getwd)
 BUILD_FOLDER = 'build'
+DIST_FOLDER = 'dist'
 
 desc "Clean files"
 task :clean do
   recreate BUILD_FOLDER
+  recreate DIST_FOLDER
 end
 
 desc "Compile document"
-task :build => [:clean] do
-	pdflatex TEX_FILE, BUILD_FOLDER
+task :build => [:presentation, :notes]
+
+task :presentation => [:clean] do
+	pdflatex 'session.presentation.tex', BUILD_FOLDER
 end
 
-desc "Open compiled document"
-task :open => [:build] do
-  open_at BUILD_FOLDER, "#{PROJECT_NAME}.pdf"
+task :notes => [:clean] do
+	pdflatex 'session.notes.tex', BUILD_FOLDER
+end
+
+desc "Prepare for distribution"
+task :dist => [:clean, :build] do
+  copy_as "#{DIST_FOLDER}/#{PROJECT_NAME}.pdf", "#{BUILD_FOLDER}/session.presentation.pdf"
+  copy_as "#{DIST_FOLDER}/#{PROJECT_NAME}.notes.pdf", "#{BUILD_FOLDER}/session.notes.pdf"
+end
+
+desc "Open presentation document"
+task :open => [:dist] do
+  open_at DIST_FOLDER, "#{PROJECT_NAME}.pdf"
 end
 
 
@@ -31,11 +44,16 @@ def recreate(folder)
   FileUtils.mkdir folder
 end
 
+def copy_as(target, source)
+  puts "Copying as #{target} file #{source}"
+  FileUtils.cp source, target
+end
+
 def pdflatex(tex_file, into)
   puts "Processing file: #{tex_file}"
-  `pdflatex -output-directory #{into} -jobname=#{PROJECT_NAME} #{tex_file}`
+  `pdflatex -output-directory #{into} #{tex_file}`
 
-  puts "Processed file: #{into}/#{PROJECT_NAME}.pdf"
+  # puts "Processed file: #{into}/#{PROJECT_NAME}.pdf"
 end
 
 def open_at(folder, file)
