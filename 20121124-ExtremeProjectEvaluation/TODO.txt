@@ -1,6 +1,6 @@
 Content:
-- Spikes
-- Contact me
++ Spikes
++ Contact me
 + References - Mind mapping
 + References - LaTeX
 - Early feedback:
