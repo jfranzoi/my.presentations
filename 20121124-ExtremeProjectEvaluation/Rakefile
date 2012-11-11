@@ -1,31 +1,35 @@
 require 'rake'
 require 'fileutils'
 
-task :default => [:clean, :build, :dist]
+task :default => :dist
 
 PROJECT_NAME = File.basename(Dir.getwd)
 BUILD_FOLDER = 'build'
 DIST_FOLDER = 'dist'
 
-desc "Clean files"
+desc "Clean folders"
 task :clean do
-  recreate BUILD_FOLDER
-  recreate DIST_FOLDER
+  delete BUILD_FOLDER, DIST_FOLDER
+end
+
+desc "Create folders"
+task :init => [:clean] do
+  create BUILD_FOLDER, DIST_FOLDER
 end
 
 desc "Compile documents"
 task :build => [:presentation, :notes]
 
-task :presentation => [:clean] do
+task :presentation => [:init] do
 	pdflatex 'session.presentation.tex', BUILD_FOLDER
 end
 
-task :notes => [:clean] do
+task :notes => [:init] do
 	pdflatex 'session.notes.tex', BUILD_FOLDER
 end
 
 desc "Prepare documents for distribution"
-task :dist => [:clean, :build] do
+task :dist => [:init, :build] do
   copy_as "#{DIST_FOLDER}/#{PROJECT_NAME}.pdf", "#{BUILD_FOLDER}/session.presentation.pdf"
   copy_as "#{DIST_FOLDER}/#{PROJECT_NAME}.notes.pdf", "#{BUILD_FOLDER}/session.notes.pdf"
 end
@@ -45,10 +49,18 @@ end
 
 private
 
-def recreate(folder)
-  puts "Recreating folder: #{folder}..."
-  FileUtils.rm_rf folder
-  FileUtils.mkdir folder
+def delete(*folders)
+  folders.each do |folder|
+    puts "Deleting #{folder}..."
+    FileUtils.rm_rf folder
+  end
+end
+
+def create(*folders)
+  folders.each do |folder|
+    puts "Creating #{folder}..."
+    FileUtils.mkdir folder
+  end
 end
 
 def copy_as(target, source)
