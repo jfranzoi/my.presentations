@@ -4,8 +4,8 @@ Content:
 + References - Mind mapping
 + References - LaTeX
 - Early feedback:
-	- not enough people, e.g. stakeholders
-	- feasibility, in the view of provider: should I sign for the project?
+	+ not enough people, e.g. stakeholders
+	+ feasibility, in the view of provider: should I sign for the project?
 	- personal experience: gone well, gone bad -> "why" behind each practice
 - Speaker notes
 	
