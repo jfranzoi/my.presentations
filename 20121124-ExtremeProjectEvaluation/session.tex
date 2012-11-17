@@ -108,24 +108,34 @@
 
 				\begin{itemize}
 					\item \textbf{Mappa mentale}
+					\begin{itemize}
+						\item Idea centrale
+						\item Collegamenti
+						\item A mano, colori
+					\end{itemize}
 				\end{itemize}
 		    \end{column}
 		    \begin{column}{.5\textwidth}
 				\hspace*{-0.4cm} \includegraphics[scale=0.17]{images/mindmap-1}
 		    \end{column}
 		 \end{columns}
+		
+		\speakernote{ \textbf{chiaccherata} iniziale, cliente introduce al team. nuovo progetto: presentazione (usata con altri). rifacimento: website o demo sistema esistente }
+		\speakernote{ apppunti con mappa mentale: tecnica per \textbf{visualizzare} informazioni. idea centrale, collegamenti tra concetti. a mano, forme, colori.}
+		\speakernote{ note, dubbi e domande. dominio, fasi e scadenze. \textbf{non in dettaglio}. }
+
 	\end{frame}
 	
-	\begin{frame}{Esplorazione: Mappa Mentale}
-		\begin{columns}[T]
-		    \begin{column}{.5\textwidth}
-				\includegraphics[scale=0.16]{images/mindmap-3}
-		    \end{column}
-		    \begin{column}{.5\textwidth}
-				\hspace*{-0.4cm} \includegraphics[scale=0.17]{images/mindmap-2}
-		    \end{column}
-		 \end{columns}
-	\end{frame}
+	% \begin{frame}{Esplorazione: Mappa Mentale}
+	% 	\begin{columns}[T]
+	% 	    \begin{column}{.5\textwidth}
+	% 			\includegraphics[scale=0.16]{images/mindmap-3}
+	% 	    \end{column}
+	% 	    \begin{column}{.5\textwidth}
+	% 			\hspace*{-0.4cm} \includegraphics[scale=0.17]{images/mindmap-2}
+	% 	    \end{column}
+	% 	 \end{columns}
+	% \end{frame}
 
 	\begin{frame}{Esplorazione: Cosa?}
 
@@ -150,30 +160,37 @@
 					\end{itemize}
 				\end{itemize}
 				
-	    \end{column}
-	    \begin{column}{0.4\textwidth}
-			\hspace*{-0.9cm} \includegraphics[scale=0.115]{images/stories}
-			\\ \vspace*{0.4cm}
-			\hspace*{-0.9cm} \includegraphics[scale=0.13]{images/domain-1}
-	    \end{column}
-	 \end{columns}
+			\end{column}
+			\begin{column}{0.4\textwidth}
+				\hspace*{-0.9cm} \includegraphics[scale=0.115]{images/stories}
+				\\ \vspace*{0.4cm}
+				\hspace*{-0.9cm} \includegraphics[scale=0.13]{images/domain-1}
+			\end{column}
+		\end{columns}
+		
+		\speakernote{ ora inizia \textbf{analisi}: in XP con user stories: cartoncini scritti a mano, nome, note, domande. granularità grossa (temi), es: aree website, servizi offerti. \textbf{indipendenti} (in che ordine?) e \textbf{negoziabili} (facciamo o no?). }
+		\speakernote{ \textbf{nessuna stima} perchè esplorazione, non commitment. }
+		\speakernote{ parallelamente, \textbf{concetti} del dominio, relazioni tra questi, cardinalità relazioni. concetti: identità. relazioni: associazione, appartenenza, catalogo. cardinalità: 0..1, 1, molti}
+		\speakernote{ proposta di \textbf{piano di rilascio}: storie raggruppate. criteri: servizi offerti, scadenze ed eventi, rischio. }
+		\speakernote{ attività, non fasi: \textbf{raffinamenti} successivi, quando arriva nuova conoscenza. es: split o accorpamento di carte/temi per fotografare rischio, complessità o dipendenze. es: estratte concetto da attributo, cambio cardinalità. }
+	
 	\end{frame}
 	
-	\begin{frame}{Esplorazione: Modello del Dominio}
-		\begin{columns}[T]
-		    \begin{column}{.5\textwidth}
-				\includegraphics[scale=0.12]{images/domain-2}
-				\\ \vspace*{0.4cm}
-				\includegraphics[scale=0.15]{images/domain-4}
-		    \end{column}
-		    \begin{column}{.5\textwidth}
-				\vspace*{0.3cm}
-				\hspace*{-0.3cm} \includegraphics[scale=0.15]{images/domain-5}
-				\\ \vspace*{0.3cm}
-				\hspace*{-0.3cm} \includegraphics[scale=0.13]{images/domain-3}
-		    \end{column}
-		 \end{columns}
-	\end{frame}
+	% \begin{frame}{Esplorazione: Modello del Dominio}
+	% 	\begin{columns}[T]
+	% 	    \begin{column}{.5\textwidth}
+	% 			\includegraphics[scale=0.12]{images/domain-2}
+	% 			\\ \vspace*{0.4cm}
+	% 			\includegraphics[scale=0.15]{images/domain-4}
+	% 	    \end{column}
+	% 	    \begin{column}{.5\textwidth}
+	% 			\vspace*{0.3cm}
+	% 			\hspace*{-0.3cm} \includegraphics[scale=0.15]{images/domain-5}
+	% 			\\ \vspace*{0.3cm}
+	% 			\hspace*{-0.3cm} \includegraphics[scale=0.13]{images/domain-3}
+	% 	    \end{column}
+	% 	 \end{columns}
+	% \end{frame}
 
 	\begin{frame}{Esplorazione: Come?}
 		
@@ -209,20 +226,20 @@
 
 	\end{frame}
 	
-	\begin{frame}{Esplorazione: Architettura Logica}
-		\begin{columns}[T]
-		    \begin{column}{.5\textwidth}
-				\includegraphics[scale=0.13]{images/architecture-2}
-				\\ \vspace*{0.2cm}
-				\includegraphics[scale=0.135]{images/architecture-3}
-		    \end{column}
-		    \begin{column}{.5\textwidth}
-				\includegraphics[scale=0.13]{images/architecture-5}
-				\\ \vspace*{0.2cm}
-				\hspace*{0.2cm} \includegraphics[scale=0.13]{images/architecture-4}
-		    \end{column}
-		 \end{columns}
-	\end{frame}
+	% \begin{frame}{Esplorazione: Architettura Logica}
+	% 	\begin{columns}[T]
+	% 	    \begin{column}{.5\textwidth}
+	% 			\includegraphics[scale=0.13]{images/architecture-2}
+	% 			\\ \vspace*{0.2cm}
+	% 			\includegraphics[scale=0.135]{images/architecture-3}
+	% 	    \end{column}
+	% 	    \begin{column}{.5\textwidth}
+	% 			\includegraphics[scale=0.13]{images/architecture-5}
+	% 			\\ \vspace*{0.2cm}
+	% 			\hspace*{0.2cm} \includegraphics[scale=0.13]{images/architecture-4}
+	% 	    \end{column}
+	% 	 \end{columns}
+	% \end{frame}
 
 	\begin{frame}{Commitment: Stima}
 		
