@@ -125,17 +125,6 @@
 		\speakernote{ note, dubbi e domande. dominio, fasi e scadenze. \textbf{non in dettaglio}. }
 
 	\end{frame}
-	
-	% \begin{frame}{Esplorazione: Mappa Mentale}
-	% 	\begin{columns}[T]
-	% 	    \begin{column}{.5\textwidth}
-	% 			\includegraphics[scale=0.16]{images/mindmap-3}
-	% 	    \end{column}
-	% 	    \begin{column}{.5\textwidth}
-	% 			\hspace*{-0.4cm} \includegraphics[scale=0.17]{images/mindmap-2}
-	% 	    \end{column}
-	% 	 \end{columns}
-	% \end{frame}
 
 	\begin{frame}{Esplorazione: Cosa?}
 
@@ -168,78 +157,54 @@
 			\end{column}
 		\end{columns}
 		
-		\speakernote{ ora inizia \textbf{analisi}: in XP con user stories: cartoncini scritti a mano, nome, note, domande. granularità grossa (temi), es: aree website, servizi offerti. \textbf{indipendenti} (in che ordine?) e \textbf{negoziabili} (facciamo o no?). }
-		\speakernote{ \textbf{nessuna stima} perchè esplorazione, non commitment. }
-		\speakernote{ parallelamente, \textbf{concetti} del dominio, relazioni tra questi, cardinalità relazioni. concetti: identità. relazioni: associazione, appartenenza, catalogo. cardinalità: 0..1, 1, molti}
-		\speakernote{ proposta di \textbf{piano di rilascio}: storie raggruppate. criteri: servizi offerti, scadenze ed eventi, rischio. }
-		\speakernote{ attività, non fasi: \textbf{raffinamenti} successivi, quando arriva nuova conoscenza. es: split o accorpamento di carte/temi per fotografare rischio, complessità o dipendenze. es: estratte concetto da attributo, cambio cardinalità. }
+		\speakernote{ ora inizia \textbf{analisi}: in XP con user stories. cartoncini scritti a mano, nome, note, domande. granularità grossa (temi), es: aree website, servizi offerti. }
+		\speakernote{ \textbf{indipendenti} (in che ordine?) e \textbf{negoziabili} (facciamo o no?). \textbf{nessuna stima} perchè esplorazione, non commitment. }
+		\speakernote{ \textbf{concetti} del dominio, relazioni, cardinalità. obiettivo: \textbf{linguaggio} comune, comprensione, comunicazione. concetti: identità. relazioni: associazione, appartenenza, catalogo. cardinalità: 0..1, 1, molti}
+		\speakernote{ proposta di piano di rilascio: storie \textbf{raggruppate}. criteri: servizi offerti, scadenze ed eventi, rischio. }
+		\speakernote{ \textbf{raffinamenti}. es: split per fotografare rischio/complessità. es: estratto concetto da attributo, cardinalità diventa 0..1 (opzionale). }
 	
 	\end{frame}
-	
-	% \begin{frame}{Esplorazione: Modello del Dominio}
-	% 	\begin{columns}[T]
-	% 	    \begin{column}{.5\textwidth}
-	% 			\includegraphics[scale=0.12]{images/domain-2}
-	% 			\\ \vspace*{0.4cm}
-	% 			\includegraphics[scale=0.15]{images/domain-4}
-	% 	    \end{column}
-	% 	    \begin{column}{.5\textwidth}
-	% 			\vspace*{0.3cm}
-	% 			\hspace*{-0.3cm} \includegraphics[scale=0.15]{images/domain-5}
-	% 			\\ \vspace*{0.3cm}
-	% 			\hspace*{-0.3cm} \includegraphics[scale=0.13]{images/domain-3}
-	% 	    \end{column}
-	% 	 \end{columns}
-	% \end{frame}
 
 	\begin{frame}{Esplorazione: Come?}
 		
 		\begin{columns}[T]
-		    \begin{column}{.5\textwidth}
 
-		\begin{itemize}
-			\item \textbf{Architettura Logica}
-			\begin{itemize}
-				\item Sistemi
-				\item Interconnessioni
-				\item Clients (e utenti)
-			\end{itemize}
-			\item \textbf{Hosting}
-			\begin{itemize}
-				\item In-house, cloud
-				\item Pro, staging
-			\end{itemize}
-			\item \textbf{Spikes}
-			\begin{itemize}
-				\item Prototipi
-				\item Time-boxed
-			\end{itemize}
+		    \begin{column}{.5\textwidth}
+				\begin{itemize}
+
+					\item \textbf{Architettura Logica}
+					\begin{itemize}
+						\item Sistemi
+						\item Interconnessioni
+						\item Clients (e utenti)
+					\end{itemize}
+				
+					\item \textbf{Hosting}
+					\begin{itemize}
+						\item In-house, cloud
+						\item Pro, staging
+					\end{itemize}
+				
+					\item \textbf{Spikes}
+					\begin{itemize}
+						\item Prototipi
+						\item Time-boxed
+					\end{itemize}
+				\end{itemize}
+			\end{column}
 			
-			\speakernote{ Spikes per aree che non si conoscono, come integrazione con sistemi esterni. Codice scritto per dimostrare la fattibilità tecnica. Poi si versiona per consultazione, ma di fatto si butta via}
-		\end{itemize}
+			\begin{column}{.5\textwidth}
+				\hspace*{-0.6cm} \includegraphics[scale=0.15]{images/architecture-1} \\
+				{\scriptsize N.Pryce, TDD of Asynchronous Systems}
+			\end{column}
+			
+		\end{columns}
 		
-	    \end{column}
-	    \begin{column}{.5\textwidth}
-			\hspace*{-0.6cm} \includegraphics[scale=0.15]{images/architecture-1}
-	    \end{column}
-	 \end{columns}
+		\speakernote{ \textbf{design} di sistema: in XP architettura evolve con lo sviluppo. individuare rischi: sistemi esterni, tecnologie, asincronicità. architettura logica, alto livello: quali sistemi, come parlano, come accedono gli utenti. }
+		\speakernote{ requisiti di hosting: server-farm \textbf{esistente}? cloud? ambiente di collaudo? procedure di colluado? in assenza di vincoli, \textbf{esperienza} pregressa del team per una proposta. }
+		\speakernote{ spikes per rischi: sistemi esterni, tecnologie. \textbf{prototipi} usa e getta, versionati per consultazione. timebox per maggiore \textbf{focus}. }
 
 	\end{frame}
-	
-	% \begin{frame}{Esplorazione: Architettura Logica}
-	% 	\begin{columns}[T]
-	% 	    \begin{column}{.5\textwidth}
-	% 			\includegraphics[scale=0.13]{images/architecture-2}
-	% 			\\ \vspace*{0.2cm}
-	% 			\includegraphics[scale=0.135]{images/architecture-3}
-	% 	    \end{column}
-	% 	    \begin{column}{.5\textwidth}
-	% 			\includegraphics[scale=0.13]{images/architecture-5}
-	% 			\\ \vspace*{0.2cm}
-	% 			\hspace*{0.2cm} \includegraphics[scale=0.13]{images/architecture-4}
-	% 	    \end{column}
-	% 	 \end{columns}
-	% \end{frame}
 
 	\begin{frame}{Commitment: Stima}
 		
@@ -411,6 +376,48 @@
 
 	\begin{frame}{Cosa Portare a Casa}
 		\hspace*{-0.5cm} \includegraphics[scale=0.26]{images/takeaway}
+	\end{frame}
+	
+	\begin{frame}{Esempi: Mappa Mentale}
+		\begin{columns}[T]
+		    \begin{column}{.5\textwidth}
+				\includegraphics[scale=0.16]{images/mindmap-3}
+		    \end{column}
+		    \begin{column}{.5\textwidth}
+				\hspace*{-0.4cm} \includegraphics[scale=0.17]{images/mindmap-2}
+		    \end{column}
+		 \end{columns}
+	\end{frame}
+
+	\begin{frame}{Esempi: Modello del Dominio}
+		\begin{columns}[T]
+		    \begin{column}{.5\textwidth}
+				\includegraphics[scale=0.12]{images/domain-2}
+				\\ \vspace*{0.4cm}
+				\includegraphics[scale=0.15]{images/domain-4}
+		    \end{column}
+		    \begin{column}{.5\textwidth}
+				\vspace*{0.3cm}
+				\hspace*{-0.3cm} \includegraphics[scale=0.15]{images/domain-5}
+				\\ \vspace*{0.3cm}
+				\hspace*{-0.3cm} \includegraphics[scale=0.13]{images/domain-3}
+		    \end{column}
+		 \end{columns}
+	\end{frame}
+
+	\begin{frame}{Esempi: Architettura Logica}
+		\begin{columns}[T]
+		    \begin{column}{.5\textwidth}
+				\includegraphics[scale=0.13]{images/architecture-2}
+				\\ \vspace*{0.2cm}
+				\includegraphics[scale=0.135]{images/architecture-3}
+		    \end{column}
+		    \begin{column}{.5\textwidth}
+				\includegraphics[scale=0.13]{images/architecture-5}
+				\\ \vspace*{0.2cm}
+				\hspace*{0.2cm} \includegraphics[scale=0.13]{images/architecture-4}
+		    \end{column}
+		 \end{columns}
 	\end{frame}
 	
 	\begin{frame}{Per Approfondire}
