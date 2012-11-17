@@ -17,8 +17,10 @@
 \setbeamercolor{structure}{fg=purple}
 \setbeamertemplate{items}[circle]
 \setbeamercolor*{item}{fg=black}
+\setbeamerfont{note page}{size=\footnotesize}
 
 \newcommand{\highlight}[1]{{\color{purple} \emph{#1}}}
+\newcommand{\speakernote}[1]{\note[item]{ #1 }}
 
 \title{ Extreme \\ Project Evaluation }
 
@@ -55,8 +57,9 @@
 			\end{itemize}
 		\end{itemize}
 		
-		\note[item]{ ci viene chiesto di valutare la realizzazione di un progetto software. non abbiamo molto tempo per rispondere, non vogliamo investire troppo tempo per rispondere, ma la risposta deve essere un'indicazione attendibile. }
-		\note[item]{ indicazione di budget per potenziale cliente o cliente esistente, indicazione dei tempi di realizzazione per progetti interni }
+		\speakernote{ ci viene chiesto di valutare la realizzazione di un progetto software. non abbiamo molto tempo per rispondere, ma la risposta deve essere un'\textbf{indicazione} attendibile. indicazione di budget per potenziale cliente o cliente esistente, indicazione dei tempi di realizzazione per progetti interni }
+		\speakernote{ non possiamo \textbf{permetterci} di dedicare tutto il tempo necessario per pianificare in dettaglio, nè per i prototipi per tutti i rischi tecnici }
+		\speakernote{ vi racconto \textbf{un modo} di affrontare queste situazioni, partendo da quanto ho imparato applicando XP }
 	\end{frame}
 
 
@@ -65,7 +68,7 @@
 			\item Planning in Extreme Programming
 			\begin{itemize}
 				\item \highlight{Strategia}: esplorazione, commitment, steering
-				\item \highlight{Valori}: feedback, semplicità, comunicazione
+				\item \highlight{Valori}: semplicità, comunicazione, feedback
 			\end{itemize}
 		\end{itemize}
 
@@ -82,6 +85,11 @@
 		\begin{center}
 			\textbf{Esplorazione, Commitment, Reporting}
 		\end{center}
+		
+		\speakernote{ come si fa un piano in XP? \textbf{strategia} in 3 attività: esplorazione (indagine del problema), commitment (impegno per una soluzione) e steering (aggiustare sulla base dal riscontro) }
+		\speakernote{ \textbf{attività} e non fasi: non sequenziali, ma raffinamenti successivi }
+		\speakernote{ in XP i \textbf{valori} sottendono alle pratiche. planning: semplicità (usiamo le tecniche più leggere possibile), comunicazione (evitiamo fraintendimenti e condividiamo gli obiettivi), feedback (adattiamo alla luce di quanto appreso) }
+		\speakernote{ affrontiamo il rischio della valutazione. \textbf{granularità} grossa: scope dei temi/storie, scala delle stime (settimane). ci affidiamo a esperienza pregressa: tecnologie, dominio, team. \textbf{timebox} valutazione. planning game d'avvio per \textbf{steering}}
 	\end{frame}
 
 
@@ -190,7 +198,7 @@
 				\item Time-boxed
 			\end{itemize}
 			
-			\note[item]{ Spikes per aree che non si conoscono, come integrazione con sistemi esterni. Codice scritto per dimostrare la fattibilità tecnica. Poi si versiona per consultazione, ma di fatto si butta via}
+			\speakernote{ Spikes per aree che non si conoscono, come integrazione con sistemi esterni. Codice scritto per dimostrare la fattibilità tecnica. Poi si versiona per consultazione, ma di fatto si butta via}
 		\end{itemize}
 		
 	    \end{column}
@@ -412,7 +420,7 @@
 				\end{itemize}
 		\end{itemize}
 		
-		\note[item]{ Contratti: ho riportato sul blog personale alcuni link, (dopo una domanda allo scorso IAD). Es: un articolo di Peter Stevens che ha ispirato una presentazione del Milano XPUG}
+		\speakernote{ Contratti: ho riportato sul blog personale alcuni link, (dopo una domanda allo scorso IAD). Es: un articolo di Peter Stevens che ha ispirato una presentazione del Milano XPUG}
 	\end{frame}
 	
 	\begin{frame}{E questo è tutto, gente!}
