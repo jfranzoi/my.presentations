@@ -18,4 +18,4 @@ Images:
 + Economics: ?
 - Report: real document
 + Takeaway mindmap: better one
-- Book covers
++ Book covers
