@@ -7,7 +7,8 @@ Content:
 	+ not enough people, e.g. stakeholders
 	+ feasibility, in the view of provider: should I sign for the project?
 	- personal experience: gone well, gone bad -> "why" behind each practice
-- Speaker notes
++ Speaker notes
++ Spell checking
 	
 Images:
 - Mind map: with colors!
