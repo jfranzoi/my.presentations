@@ -89,7 +89,7 @@
 			\textbf{Esplorazione, Commitment, Reporting}
 		\end{center}
 		
-		\speakernote{ in XP la pianificazione è una \textbf{strategia} in 3 attività: esplorazione (indagine del problema), commitment (impegno per una soluzione) e steering (aggiustare sulla base dal riscontro) }
+		\speakernote{ in XP la pianificazione è una \textbf{strategia} in 3 attività: esplorazione (indagine del contesto), commitment (impegno per una soluzione) e steering (aggiustare impegno sulla base dal riscontro) }
 		\speakernote{ \textbf{attività} e non fasi: non sequenziali, ma raffinamenti successivi }
 		\speakernote{ in XP i \textbf{valori} sottendono alle pratiche. planning: semplicità (2 ruoli, regole semplici, tecniche \ticks{leggere}), comunicazione (evitiamo fraintendimenti, condividiamo gli obiettivi), feedback (adattiamo alla luce di quanto appreso) }
 		\speakernote{ affrontiamo il rischio della valutazione. \textbf{granularità} grossa: scope dei temi/storie, scala delle stime (settimane). ci affidiamo a esperienza pregressa: tecnologie, dominio, team. \textbf{timebox} valutazione. planning game d'avvio per \textbf{steering}}
@@ -124,8 +124,8 @@
 		 \end{columns}
 		
 		\speakernote{ \textbf{chiaccherata} iniziale, cliente introduce al team. nuovo progetto: presentazione (usata con altri fornitori). rifacimento: website o demo sistema esistente }
-		\speakernote{ apppunti con mappa mentale: tecnica per \textbf{visualizzare} informazioni. idea centrale, collegamenti tra concetti. a mano, forme, colori.}
-		\speakernote{ note, dubbi e domande. dominio, fasi e scadenze. \textbf{non in dettaglio}, bisogna quindi saper interrompere e rimandare }
+		\speakernote{ appunti con mappa mentale: tecnica per \textbf{visualizzare} informazioni. idea centrale, collegamenti tra concetti. a mano, forme, colori.}
+		\speakernote{ dominio, fasi e scadenze. appunti: note, dubbi e domande. \textbf{non in dettaglio}, bisogna quindi saper interrompere e rimandare }
 
 	\end{frame}
 
@@ -162,9 +162,9 @@
 		
 		\speakernote{ \textbf{analisi}: in XP con user stories. cartoncini scritti a mano, nome, note, domande. granularità grossa (temi), es: aree website, servizi offerti. }
 		\speakernote{ indipendenti: \ticks{in che ordine?}, negoziabili: \ticks{facciamo o no?}. \textbf{nessuna stima} perchè esplorazione, non commitment. }
-		\speakernote{ concetti del dominio, relazioni, cardinalità. obiettivo: \textbf{linguaggio} comune, comprensione, comunicazione. concetti: identità. relazioni: associazione, appartenenza, catalogo. cardinalità: 0..1, 1, molti}
+		\speakernote{ glossario concetti di dominio, relazioni, cardinalità. obiettivo: \textbf{linguaggio} comune, comprensione, comunicazione. concetti: identità. relazioni: associazione, appartenenza, catalogo. cardinalità: 1, molti, opzionalità}
 		\speakernote{ proposta di piano di rilascio: storie \textbf{raggruppate}. criteri: servizi offerti, scadenze ed eventi, rischio. }
-		\speakernote{ \textbf{raffinamenti}. es: split per fotografare rischio/complessità. es: estratto concetto da attributo, cardinalità diventa 0..1 (opzionale). }
+		% \speakernote{ \textbf{raffinamenti}. es: split per fotografare rischio/complessità. es: estratto concetto da attributo, cardinalità diventa 0..1 (opzionale). }
 	
 	\end{frame}
 
@@ -203,9 +203,9 @@
 			
 		\end{columns}
 		
-		\speakernote{ \textbf{design} di sistema: in XP architettura evolve con lo sviluppo. individuare rischi: sistemi esterni, tecnologie, asincronicità. delle tante \ticks{viste} con cui descrivere architettura, sceglamo quella \ticks{logica}, componenti e connettori, ad alto livello: quali sistemi, come parlano, come accedono gli utenti. }
-		\speakernote{ requisiti di hosting: server-farm \textbf{esistente}? cloud? ambiente di collaudo? procedure di colluado? in assenza di vincoli, \textbf{esperienza} pregressa del team per una proposta. }
-		\speakernote{ spikes per rischi: sistemi esterni, tecnologie. \textbf{prototipi} usa e getta, versionati per consultazione. timebox per maggiore \textbf{focus}. }
+		\speakernote{ \textbf{design} di sistema: in XP architettura evolve con lo sviluppo. individuare rischi: sistemi esterni, tecnologie. delle tante \ticks{viste} con cui descrivere architettura, sceglamo \ticks{componenti e connettori}: quali sistemi (componenti logici), come parlano (protocolli), come accedono gli utenti (client) }
+		\speakernote{ requisiti di hosting: server-farm \textbf{esistente}? su cloud? ambiente di collaudo? procedure di colluado? in assenza di vincoli, proposta da \textbf{esperienza} pregressa }
+		\speakernote{ spikes per rischi: sistemi esterni, tecnologie. \textbf{prototipi} usa e getta, versionati per consultazione. timebox per maggiore \textbf{focus} }
 
 	\end{frame}
 
@@ -290,9 +290,9 @@
 		
 		{\footnotesize \highlight{\href{http://www.flickr.com/photos/kimberlyjennery/1210060984/}{http://www.flickr.com/photos/kimberlyjennery/1210060984/}}}
 		
-		\speakernote{ individuamo la velocità del team: quante coppie, \textbf{rapporto} tra tempo ideale e tempo reale (per avvio progetto e per il processo) }
+		\speakernote{ individuamo la velocità del team. quante coppie, \textbf{rapporto} tra tempo ideale e tempo reale: avvio progetto, overhead processo - non errore di stima! }
 		\speakernote{ otteniamo \textbf{quanto tempo} occorre per realizzare il progetto. a seconda dell'interlocutore, la esprimiamo con unità di misura diverse. internamente: \ticks{quante iterazioni?} in settimane/team. per il business: \ticks{quando finisce?} in mesi/team }
-		\speakernote{ in fase di valutazione è indicazione, che diventerà eventualmente una \textbf{data} al kick-off di progetto: da quando si parte, aggiunte ferie e varie. }
+		\speakernote{ in fase di valutazione è indicazione, che diventerà eventualmente una \textbf{data} al kick-off di progetto: da quando si parte, aggiunte ferie e varie. es: 8 mesi = gen - ago}
 
 	\end{frame}
 	
@@ -325,8 +325,8 @@
 		    \end{column}
 		\end{columns}
 		
-		\speakernote{ può essere utile dare un'indicazione dei costi di hosting, come previsione per ambienti di produzione e staging. ad esempio usando il calcolatore on-line offerto dai servizi di cloud computing. è la parte \textbf{meno sotto controllo}, dipenderà da architettura e dimensionamento ambienti }
-		\speakernote{ anche servizi per l'esercizio e il monitoraggio, ma \textbf{non indispensabili} }
+		\speakernote{ ci siamo quasi, ultima indicazione utile: costi di hosting, come previsione per ambienti di produzione e staging. ad esempio usando il calcolatore on-line del servizio di cloud. è la parte \textbf{meno sotto controllo}, dipenderà da architettura e dimensionamento ambienti }
+		\speakernote{ anche servizi per l'esercizio e il monitoraggio, ma \textbf{non indispensabili}. indicazione da progetti passati }
 
 	\end{frame}
 	
@@ -357,8 +357,8 @@
 			\end{itemize}
 		\end{itemize}
 		
-		\speakernote{ \textbf{riassunto} di quanto raccolto. per clienti: un documento, internamente: pagina sulla wiki }
-		\speakernote{ una \textbf{traccia}. presentazione: chi scrive (team), date incontri con il cliente. report valutazione: narrativa del progetto, usando i concetti di dominio condivisi. modello del dominio come riassunto. narrativa dei rilasci: scope, obiettivi. per ogni rilascio, elenco temi, con note e domande aperte. (eventuale spiegazione come si stima). composizione team. tabelle riassuntive effort ed elapsed. soluzione tecnica: architettura logica, integrazione sistemi esistenti. vincoli di hosting. costi: hosting e servizi a supporto dell'esercizio }
+		\speakernote{ infine, un \textbf{riassunto} di quanto raccolto. per clienti: un documento, internamente: pagina sulla wiki o spreadsheet condiviso. ecco una \textbf{traccia} }
+		\speakernote{ \textbf{1)} presentazione: chi scrive (team), date incontri con il cliente. \textbf{2)} valutazione: narrativa del progetto, usando i concetti di dominio condivisi. modello del dominio come riassunto. narrativa dei rilasci: scope, obiettivi. per ogni rilascio, elenco temi, con note e domande aperte. (eventuale spiegazione come si stima). composizione team. tabelle riassuntive effort (ordine grandezza progetto) ed elapsed (tempo previsto a realizzarlo). \textbf{3)} soluzione tecnica: architettura logica, integrazione sistemi esistenti. vincoli di hosting. \textbf{4)} costi: hosting e servizi a supporto dell'esercizio }
 		\speakernote{ mancano \textbf{costi di sviluppo}: non è un contratto, bastano effort e composizione team }
 	\end{frame}
 	
@@ -384,7 +384,7 @@
 		\speakernote{ ecco alcuni \textbf{dubbi} che possono sorgere, e \textbf{obiezioni} che mi sono state fatte }
 		\speakernote{ non si sono viste \textbf{abbastanza persone}? fondamentali, raffinamenti successivi dopo feedback del team con tutti gli stakeholders (cliente, tecnici): priorità di business, vincoli tecnici }
 		\speakernote{ prodotti e progetti interni, \textbf{senza cliente}? ho cercato di mostrare differenze, ma cliente c'è sempre. alcune cose non si applicano, costi sviluppo già noti, standard per hosting e servizi. info principale sono effort e elapsed dato il team di sviluppo }
-		\speakernote{ questa valutazione è un \textbf{investimento}, deve esserci una copertura economica. fornitore, se preventivo per cliente potenziale. cliente, formula del kick-start di 2-5 giorni }
+		\speakernote{ questa valutazione è un \textbf{investimento}, deve esserci una copertura economica. fornitore, se preventivo per cliente potenziale. cliente, formula del kick-start di 2-5 giorni. in entrambi i casi, timeboxing }
 	\end{frame}
 
 	\begin{frame}{Ok, ma...}
@@ -415,10 +415,76 @@
 		\hspace*{-0.5cm} \includegraphics[scale=0.26]{images/takeaway}
 		
 		\speakernote{ ho messo insieme \textbf{tanti temi}, ciascuno meritava più tempo. con questa panoramica spero di avervi lasciato qualcosa da portare a casa }
-		\speakernote{ una \textbf{strategia} per pianificare progetti software: esplorazione, commitment e steering. quali valori vi stanno dietro. (di fatto, un'introduzione ad XP) }
+		\speakernote{ una \textbf{strategia} per valutare progetti software: esplorazione, commitment e steering. quali valori vi stanno dietro. (di fatto, un'introduzione ad XP) }
 		\speakernote{ alcune tecniche per \textbf{esplorare} in modo efficace: mappe mentali per il brain-storming, analisi fatta con user stories e modelli del dominio, per ottenere un piano di rilascio. una prospettiva per descrivere l'architettura logica del sistema }
-		\speakernote{ tecniche per \textbf{gestire} incertezza e rischio nelle stime effort, così da ottenere un elapsed che porti ad un piano operativo }
+		\speakernote{ tecniche per \textbf{gestire} incertezza e rischio nelle stime dell'effort, così da ottenere un elapsed che porti ad un piano operativo }
 		\speakernote{ infine, una \textbf{traccia} di quanto condividere, per alimentare un eventuale accordo commerciale }
+	\end{frame}
+	
+	\begin{frame}{Per Approfondire}
+		\begin{columns}[T]
+		    \begin{column}{.8\textwidth}
+			
+				\begin{itemize}	
+					\item \textbf{Pianificazione e valori in XP}
+						\begin{itemize}
+							\item {\small Kent Beck \highlight{Extreme Programming Explained - 1st ed}}
+						\end{itemize}
+
+					\item \textbf{Stima e incertezza}
+						\begin{itemize}
+							\item {\small Mike Cohn \highlight{Agile Estimating and Planning}}
+						\end{itemize}
+
+					\item \textbf{Architettura logica}
+						\begin{itemize}
+							\item {\small Nat Pryce \highlight{\href{http://www.natpryce.com/articles/000755.html}{Test-Driven Development of Asynchronous Systems}}}
+						\end{itemize}
+
+					\item \textbf{Contratti}
+						\begin{itemize}
+							\item {\small Peter Stevens \highlight{\href{http://agilesoftwaredevelopment.com/blog/peterstev/10-agile-contracts}{10 Contracts for your next Agile Software Project}}}
+						\end{itemize}
+				\end{itemize}
+			\end{column}
+			\begin{column}{.2\textwidth}
+				\vspace*{-0.4cm}
+				\hspace*{0.05cm} \includegraphics[scale=0.09]{images/book-1} \\
+				\vspace*{0.05cm}
+				\hspace*{0.07cm} \includegraphics[scale=0.09]{images/book-2} \\
+				\vspace*{0.05cm}
+				\hspace*{0.35cm} \includegraphics[scale=0.3]{images/book-3} \\
+				\vspace*{0.05cm}
+				\hspace*{0.1cm} \includegraphics[scale=0.4]{images/book-4}
+		    \end{column}
+		\end{columns}
+		
+		\speakernote{ per approfondire, il libro bianco resta il punto di \textbf{riferimento} da cui partire. valori, principi e pratiche. descrizione precisa dei ruoli e delle regole del \ticks{gioco della pianificazione} }
+		\speakernote{ \textbf{analisi statistica} che ho mostrato è presa dal libro di Cohn, scritto in chiave Scrum. contiene anche distinzione tra storia, tema ed epica }
+		\speakernote{ la prospettiva e la \textbf{notazione} per l'architettura logica dei sistemi è presa da Pryce, che le usa nelle sue presentazioni. per il concetto di \ticks{viste} consiglio \ticks{\emph{Documenting Software Architectures: Views and Beyond - 2nd ed}} di Paul Clemens }
+		\speakernote{ per il tema contratti, dopo una \textbf{domanda allo scorso IAD}, ho riportato sul mio blog personale alcuni link, tra cui un articolo di Peter Stevens che ha ispirato una presentazione del Milano XPUG}
+	\end{frame}
+	
+	\begin{frame}{E questo è tutto, gente!}
+		
+		\begin{itemize}
+			\item \textbf{Un grazie a}
+			\begin{itemize}
+				\item Team \emph{Orione} @ XPeppers
+				\item Team \emph{Nimbus} @ 7Pixel
+				\item Matteo Vaccari e Davide Varvello
+			\end{itemize}
+		\end{itemize}
+		
+		\begin{itemize}
+			\item \textbf{Contatti}
+				\begin{itemize}
+					\item \highlight{ jacopo.franzoi@gmail.com }
+					\item \highlight{  \href{http://jacopo.franzoi.googlepages.com/}{http://jacopo.franzoi.googlepages.com} }
+					\item \highlight{  \href{http://jfranzoi.wordpress.com/}{http://jfranzoi.wordpress.com} }
+				\end{itemize}
+		\end{itemize}
+
 	\end{frame}
 	
 	% \begin{frame}{Esempi: Mappa Mentale}
@@ -462,71 +528,5 @@
 	% 	    \end{column}
 	% 	 \end{columns}
 	% \end{frame}
-	
-	\begin{frame}{Per Approfondire}
-		\begin{columns}[T]
-		    \begin{column}{.8\textwidth}
-			
-				\begin{itemize}	
-					\item \textbf{Pianificazione e valori in XP}
-						\begin{itemize}
-							\item {\small Kent Beck \highlight{Extreme Programming Explained - 1st ed}}
-						\end{itemize}
-
-					\item \textbf{Stima e incertezza}
-						\begin{itemize}
-							\item {\small Mike Cohn \highlight{Agile Estimating and Planning}}
-						\end{itemize}
-
-					\item \textbf{Architettura logica}
-						\begin{itemize}
-							\item {\small Nat Pryce \highlight{\href{http://www.natpryce.com/articles/000755.html}{Test-Driven Development of Asynchronous Systems}}}
-						\end{itemize}
-
-					\item \textbf{Contratti}
-						\begin{itemize}
-							\item {\small Peter Stevens \highlight{\href{http://agilesoftwaredevelopment.com/blog/peterstev/10-agile-contracts}{10 Contracts for your next Agile Software Project}}}
-						\end{itemize}
-				\end{itemize}
-			\end{column}
-			\begin{column}{.2\textwidth}
-				\vspace*{-0.4cm}
-				\hspace*{0.05cm} \includegraphics[scale=0.09]{images/book-1} \\
-				\vspace*{0.05cm}
-				\hspace*{0.07cm} \includegraphics[scale=0.09]{images/book-2} \\
-				\vspace*{0.05cm}
-				\hspace*{0.35cm} \includegraphics[scale=0.3]{images/book-3} \\
-				\vspace*{0.05cm}
-				\hspace*{0.1cm} \includegraphics[scale=0.4]{images/book-4}
-		    \end{column}
-		\end{columns}
-		
-		\speakernote{ per approfondire, il libro bianco resta il libro di \textbf{riferimento} da cui partire. valori, principi e pratiche. descrizione precisa dei ruoli e delle regole del \ticks{gioco della pianificazione} }
-		\speakernote{ \textbf{analisi statistica} che ho mostrato è presa dal libro di Cohn, scritto in chiave Scrum. contiene anche distinzione tra storia, tema ed epica }
-		\speakernote{ la prospettiva e la \textbf{notazione} per l'architettura logica dei sistemi è presa da Pryce, che le usa nelle sue presentazioni. per il concetto di \ticks{viste} consiglio \ticks{\emph{Documenting Software Architectures: Views and Beyond - 2nd ed}} di Clemens }
-		\speakernote{ per il tema contratti, dopo una \textbf{domanda allo scorso IAD}, ho riportato sul mio blog personale alcuni link, tra cui un articolo di Peter Stevens che ha ispirato una presentazione del Milano XPUG}
-	\end{frame}
-	
-	\begin{frame}{E questo è tutto, gente!}
-		
-		\begin{itemize}
-			\item \textbf{Un grazie a}
-			\begin{itemize}
-				\item Team \emph{Orione} @ XPeppers
-				\item Team \emph{Nimbus} @ 7Pixel
-				\item Matteo Vaccari e Davide Varvello
-			\end{itemize}
-		\end{itemize}
-		
-		\begin{itemize}
-			\item \textbf{Contatti}
-				\begin{itemize}
-					\item \highlight{ jacopo.franzoi@gmail.com }
-					\item \highlight{  \href{http://jacopo.franzoi.googlepages.com/}{http://jacopo.franzoi.googlepages.com} }
-					\item \highlight{  \href{http://jfranzoi.wordpress.com/}{http://jfranzoi.wordpress.com} }
-				\end{itemize}
-		\end{itemize}
-
-	\end{frame}
 
 \end{document}
