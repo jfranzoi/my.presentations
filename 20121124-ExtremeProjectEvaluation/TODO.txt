@@ -10,7 +10,7 @@ Content:
 		* gone well, gone bad -> "why" behind each practice
 		* pre-XP
 	+ bigger tables
-	- add reference to IAD 09 session
+	+ add reference to IAD 09 session
 	- what's "by the book", what's mine
 	- don't use Sigma
 	+ "exploration", not "esplorazione"
