@@ -6,7 +6,16 @@ Content:
 - Early feedback:
 	+ not enough people, e.g. stakeholders
 	+ feasibility, in the view of provider: should I sign for the project?
-	- personal experience: gone well, gone bad -> "why" behind each practice
+	- personal experience:
+		* gone well, gone bad -> "why" behind each practice
+		* pre-XP
+	+ bigger tables
+	- add reference to IAD 09 session
+	- what's "by the book", what's mine
+	- don't use Sigma
+	- "exploration", not "esplorazione"
+	- early reference to "timeboxing"
+	- release plan criteria: minimum marketable features
 + Speaker notes
 + Spell checking
 	
