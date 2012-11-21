@@ -13,8 +13,8 @@ Content:
 	- add reference to IAD 09 session
 	- what's "by the book", what's mine
 	- don't use Sigma
-	- "exploration", not "esplorazione"
-	- early reference to "timeboxing"
+	+ "exploration", not "esplorazione"
+	+ early reference to "timeboxing"
 	- release plan criteria: minimum marketable features
 + Speaker notes
 + Spell checking
