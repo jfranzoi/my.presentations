@@ -12,7 +12,7 @@ Content:
 	+ bigger tables
 	+ add reference to IAD 09 session
 	- what's "by the book", what's mine
-	- don't use Sigma
+	+ don't use Sigma, unless it's correct!
 	+ "exploration", not "esplorazione"
 	+ early reference to "timeboxing"
 	- release plan criteria: minimum marketable features
