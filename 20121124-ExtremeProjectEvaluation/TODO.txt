@@ -15,7 +15,7 @@ Content:
 	+ don't use Sigma, unless it's correct!
 	+ "exploration", not "esplorazione"
 	+ early reference to "timeboxing"
-	- release plan criteria: minimum marketable features
+	+ release plan criteria: minimum marketable features
 + Speaker notes
 + Spell checking
 	

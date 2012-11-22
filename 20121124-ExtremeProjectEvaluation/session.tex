@@ -175,11 +175,11 @@
 			\end{column}
 		\end{columns}
 		
-		\speakernote{ \textbf{analisi}: in XP con user stories. cartoncini scritti a mano, nome, note, domande. granularità grossa (temi), es: aree website, servizi offerti. }
-		\speakernote{ indipendenti: \ticks{in che ordine?}, negoziabili: \ticks{facciamo o no?}. \textbf{nessuna stima} perché esplorazione, non commitment. }
+		\speakernote{ \textbf{analisi}: in XP con user stories. cartoncini scritti a mano, nome, note, domande. granularità grossa (temi), es: aree website, servizi offerti }
+		\speakernote{ indipendenti: \ticks{in che ordine?}, negoziabili: \ticks{facciamo o no?}. \textbf{nessuna stima} perché esplorazione, non commitment }
 		\speakernote{ glossario concetti di dominio, relazioni, cardinalità. obiettivo: \textbf{linguaggio} comune, comprensione, comunicazione. concetti: identità. relazioni: associazione, appartenenza, catalogo. cardinalità: 1, molti, opzionalità}
-		\speakernote{ proposta di piano di rilascio: storie \textbf{raggruppate}. criteri: servizi offerti, scadenze ed eventi, rischio. }
-		% \speakernote{ \textbf{raffinamenti}. es: split per fotografare rischio/complessità. es: estratto concetto da attributo, cardinalità diventa 0..1 (opzionale). }
+		\speakernote{ proposta di piano di rilascio: storie \textbf{raggruppate}. criteri: insieme minimo features, scadenze ed eventi, rischio }
+		% \speakernote{ \textbf{raffinamenti}. es: split per fotografare rischio/complessità. es: estratto concetto da attributo, cardinalità diventa 0..1 (opzionale) }
 	
 	\end{frame}
 
@@ -218,7 +218,7 @@
 			
 		\end{columns}
 		
-		\speakernote{ \textbf{design} di sistema: in XP architettura evolve con lo sviluppo. individuare rischi: sistemi esterni, tecnologie. delle tante \ticks{viste} con cui descrivere architettura, scegliamo \ticks{componenti e connettori}: quali sistemi (componenti logici), come parlano (protocolli), come accedono gli utenti (client) }
+		\speakernote{ \textbf{design} di sistema: in XP architettura evolve con lo sviluppo. individuare rischi: sistemi esterni, tecnologie. vista a \ticks{componenti e connettori}, notazione: quali sistemi (componenti logici), come parlano (protocolli), come accedono gli utenti (client) }
 		\speakernote{ requisiti di hosting: server-farm \textbf{esistente}? su cloud? ambiente di collaudo? procedure di collaudo? in assenza di vincoli, proposta da \textbf{esperienza} pregressa }
 		\speakernote{ spikes per rischi: sistemi esterni, tecnologie. \textbf{prototipi} usa e getta, versionati per consultazione. timebox per maggiore \textbf{focus} }
 
@@ -255,14 +255,14 @@
 				\hspace*{-0.8cm} 
 				\includegraphics[scale=0.32]{images/effort} \\
 				\vspace*{0.2cm}
-				{\small $ \sigma = \sqrt[2] { \sum \left ( max^{2} - min^{2} \right ) } $} \\
+				{\small $ \sigma = \sqrt[2] { \sum \left ( max - min \right )^{2} } $} \\
 				{\scriptsize M.Cohn, Agile Estimating and Planning}
 		   \end{column}
 		\end{columns}
 		
 		\speakernote{ abbiamo capito i desiderata del cliente e abbiamo una supposizione per come realizzarli. ora dobbiamo capire se sia sostenibile: il \textbf{team} fornisce stime per temi/storie. supposizione, non promessa }
 		\speakernote{ dobbiamo gestire \textbf{incertezza}: 1) unità di misura a granularità grossa, settimane/coppia ideali (pair programming) 2) due livelli di confidenza, probabilità di riuscire: 50\% (minima, tutto va liscio e abbiamo esperienza pregressa), 90\% (massima, emergono complessità) }
-		\speakernote{ indicatore \textbf{statistico}, buffer derivato dalla deviazione standard: \emph{radice della somma degli scarti quadratici} }
+		\speakernote{ indicatore \textbf{statistico}, buffer derivato dalla deviazione standard: \emph{radice della somma delle differenze} }
 		\speakernote{ sommando questo buffer alla stima al 50\% otteniamo l'effort, indicazione di \textbf{quanto lavoro} ci sia da fare }
 		
 	\end{frame}
@@ -289,9 +289,9 @@
 					\end{itemize}
 				\end{itemize}
 				
-				\begin{itemize}
-					\item \small{Precisione vs. accuratezza}
-				\end{itemize}
+				% \begin{itemize}
+				% 	\item \small{Precisione vs. accuratezza}
+				% \end{itemize}
 		
 	    	\end{column}
 	
@@ -309,7 +309,7 @@
 		\speakernote{ individuiamo la velocità del team. quante coppie, \textbf{rapporto} tra tempo ideale e tempo reale: avvio progetto, overhead processo - non errore di stima! }
 		\speakernote{ otteniamo \textbf{quanto tempo} occorre per realizzare il progetto. a seconda dell'interlocutore, la esprimiamo con unità di misura diverse. internamente: \ticks{quante iterazioni?} in settimane/team. per il business: \ticks{quando finisce?} in mesi/team }
 		\speakernote{ in fase di valutazione è indicazione, che diventerà eventualmente una \textbf{data} al kick-off di progetto: da quando si parte, aggiunte ferie e varie. es: 8 mesi = gen - ago}
-		\speakernote{ da notare: indicazione precisa (non è approssimata) - ma non accurata (non è vicina alla realtà): unità di misura grossolana }
+		% \speakernote{ da notare: indicazione precisa (non è approssimata) - ma non accurata (non è vicina alla realtà): unità di misura grossolana }
 
 	\end{frame}
 	
@@ -342,8 +342,7 @@
 		    \end{column}
 		\end{columns}
 		
-		\speakernote{ ci siamo quasi, ultima indicazione utile: costi di hosting, come previsione per ambienti di produzione e staging. ad esempio usando il calcolatore on-line del servizio di cloud. è la parte \textbf{meno sotto controllo}, dipenderà da architettura e dimensionamento ambienti }
-		\speakernote{ anche servizi per l'esercizio e il monitoraggio, ma \textbf{non indispensabili}. indicazione da progetti passati }
+		\speakernote{ ultima indicazione utile, ma \textbf{non indispensabili}, se esperienza passata: costi di hosting, previsione per produzione e staging. ad esempio usando il calcolatore on-line del servizio di cloud. anche servizi per l'esercizio e il monitoraggio }
 
 	\end{frame}
 	
@@ -487,7 +486,7 @@
 		\begin{itemize}
 			\item \textbf{Un grazie a}
 			\begin{itemize}
-				\item Team \emph{Orione} @ XPeppers
+				\item Team \emph{Orione} @ Sourcesense, XPeppers
 				\item Team \emph{Nimbus} @ 7Pixel
 				\item Matteo Vaccari e Davide Varvello
 			\end{itemize}
