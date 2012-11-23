@@ -18,20 +18,17 @@ task :init => [:clean] do
 end
 
 desc "Compile documents"
-task :build => [:presentation, :notes]
-
-task :presentation => [:init] do
+task :build  => [:init] do
 	pdflatex 'session.presentation.tex', BUILD_FOLDER
-end
-
-task :notes => [:init] do
 	pdflatex 'session.notes.tex', BUILD_FOLDER
+	pdflatex 'session.with_notes.tex', BUILD_FOLDER
 end
 
 desc "Prepare documents for distribution"
 task :dist => [:init, :build] do
   copy_as "#{DIST_FOLDER}/#{PROJECT_NAME}.pdf", "#{BUILD_FOLDER}/session.presentation.pdf"
   copy_as "#{DIST_FOLDER}/#{PROJECT_NAME}.notes.pdf", "#{BUILD_FOLDER}/session.notes.pdf"
+  copy_as "#{DIST_FOLDER}/#{PROJECT_NAME}.with_notes.pdf", "#{BUILD_FOLDER}/session.with_notes.pdf"
 end
 
 desc "Open presentation document"
@@ -45,7 +42,6 @@ desc "Open notes document"
 task :open_notes => [:dist] do
   open_at DIST_FOLDER, "#{PROJECT_NAME}.notes.pdf"
 end
-
 
 private
 

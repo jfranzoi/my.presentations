@@ -20,7 +20,7 @@ Content:
 + Spell checking
 	
 Images:
-- Mind map: with colors!
++ Mind map improved
 + Logical architecture: find the original one, better resolution
 + Effort with buffer
 + Team: kids soccer team!
