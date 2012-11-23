@@ -1,9 +1,3 @@
 .DS_Store
-*.aux
-*.log
-*.out
-*.toc
-*.nav
-*.snm
-*.gz
-*.pdf
+build
+dist
